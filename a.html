@@ -5,7 +5,9 @@
 <script type="text/javascript">
 function sum()
 {
-    form.c.value = form.a.value + form.b.value;
+    form.c.value = Number(form.a.value) + Number(form.b.value);
+    /*form.a.valueとform.b.valueの値は文字列として取得されるため、
+    文字列から数値のデータとして変換する必要がある*/
 }
 </script>
 </head>
